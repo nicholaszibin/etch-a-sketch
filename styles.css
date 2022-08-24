@@ -11,16 +11,17 @@
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #textInput {
-    color: aqua;
+    color: black;
 }
 
 .options {
     width: 180px;
 }
+
 .grid {
     display: flex;
     justify-content: center;
@@ -28,5 +29,26 @@
     flex: 0 0 auto;
     width: 640px;
     height: 640px;
+    border: solid;
 
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: silver;
+    width: 120px;
+    height: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: black;
+    opacity: 0.85;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px; 
+}
+
+button {
+    margin-top: 10px;
 }
